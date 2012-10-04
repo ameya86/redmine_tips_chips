@@ -1,0 +1,33 @@
+= Tips Chips Plugin
+
+豆知識を検索フォームの下に表示します。
+Redmine2.xに対応
+
+Redmine2.1.0、FireFox15.0.1で動作確認
+
+
+== インストール / Install
+
+1. RAILS_ROOT/pluginsに配置する。
+
+2. rake redmine:plugins:migrate RAILS_ENV=production
+   を実行する。
+
+3. Redmineを再起動する。
+
+
+== アンインストール / Uninstall
+
+1. RAILS_ROOT/pluginsから削除する。
+
+2. rake redmine:plugins:migrate NAME=RedmineTipsChips VERSION=0 RAILS_ENV=production
+   を実行する
+
+3. Redmineを再起動する。
+
+
+== 更新履歴 / History
+
+=== Version 0.0.1
+
+自己責任版。

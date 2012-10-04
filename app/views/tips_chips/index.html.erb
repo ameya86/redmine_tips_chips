@@ -1,0 +1,29 @@
+<div class="contextual">
+  <%= link_to(l(:button_add), {:controller => 'tips_chips', :action => 'new'}, :class => 'icon icon-add') %>
+</div>
+
+<h2><%= l(:label_tips_chips) %></h2>
+
+<table class="list autoscroll">
+<thead>
+  <tr>
+    <th style="width: 5%;"></th>
+    <th><%= l(:field_description) %></th>
+    <th><%= l(:field_url) %></th>
+    <th style="width: 15%;"></th>
+  </tr>
+</thead>
+<tbody>
+<% @tips.each_with_index do |tip, index| %>
+  <tr>
+    <td><%= index + 1 %>.</td>
+    <td><%= tip.to_s %></td>
+    <td><%= tip.url %></td>
+    <td>
+      <%= link_to(l(:button_edit), {:controller => 'tips_chips', :action => 'edit', :id => tip.id}, :class => 'icon icon-edit') %>
+      <%= link_to(l(:button_delete), {:controller => 'tips_chips', :action => 'destroy', :id => tip.id}, :method => :post, :confirm => l(:text_are_you_sure), :class => 'icon icon-del') %>
+    </td>
+  </tr>
+<% end if @tips %>
+</tbody>
+<table>

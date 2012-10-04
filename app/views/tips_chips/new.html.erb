@@ -1,0 +1,13 @@
+<h2>
+  <%= l(:label_tips_chips) %>
+  &#187;
+  <%= l(:button_add) %>
+</h2>
+
+<%= form_tag({:controller => 'tips_chips', :action => 'new'}) do %>
+<div class="tabular box">
+  <%= render :partial => 'tips_chips/form' %>
+</div>
+
+<%= submit_tag(l(:button_create)) %>
+<% end %>

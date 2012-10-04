@@ -1,0 +1,20 @@
+tips_chips1:
+  description: チケット一覧でチケットを右クリックすると・・・？
+
+tips_chips2:
+  description: プラグインを作ってみませんか？
+  url: http://www.redmine.org/projects/redmine/wiki/Plugins
+
+tips_chips3:
+  description: プラグインを入れてみましょう。
+  url: http://www.redmine.org/plugins
+
+tips_chips4:
+  description: チケットや活動はRSSを発行できます。
+
+tips_chips5:
+  description: RedmineにはREST APIというAPIがあります。
+  url: http://www.redmine.org/projects/redmine/wiki/Rest_api
+
+tips_chips6:
+  description: ロードマップは、バージョンを作成すると表示されます。
